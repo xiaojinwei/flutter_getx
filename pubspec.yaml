@@ -1,0 +1,57 @@
+name: flutter_getx
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.3.8
+  get_storage: ^2.0.3
+  flutter: 
+    sdk: flutter
+  dio: ^4.0.0
+  flutter_svg: ^0.22.0
+  fluttertoast: ^8.0.8
+  cached_network_image: ^3.1.0
+  event_bus: ^2.0.0
+  injector: ^2.0.0 #依赖注入
+  cookie_jar: ^3.0.1 #cookie
+  dio_cookie_manager: ^2.0.0
+  path_provider: ^2.0.2 #文件管理
+  pull_to_refresh: ^2.0.0
+  sprintf: ^6.0.0 #String格式化
+  flutter_html: ^2.1.5 #html标签
+  flutter_swiper_plus: ^2.0.4
+  webview_flutter: ^2.0.12 #webview
+  url_launcher: ^6.0.9
+
+
+dev_dependencies: 
+  lints: 1.0.1
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets:
+    - assets/img/load_fail.png
+    - assets/img/load_no_data.png
+
+  fonts:
+    - family: Allura
+      fonts:
+        - asset: assets/fonts/Allura/Allura-Regular.ttf
+    - family: NotoSansTC
+      fonts:
+        - asset: assets/fonts/NotoSansTC/NotoSansTC-Regular.otf
+    - family: NotoSerifTC
+      fonts:
+        - asset: assets/fonts/NotoSerifTC/NotoSerifTC-Regular.otf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto/Roboto-Italic.ttf
+
