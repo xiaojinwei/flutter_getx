@@ -11,12 +11,11 @@ class NavigatorBottomBarPage extends StatefulWidget {
 class _NavigatorBottomBarPageState extends State<NavigatorBottomBarPage> {
   List<String> titles = ['首页', '搜索', '排名', '直播'];
   int _currentIndex = 0;
-  Color backgroundColor = Colors.white;//Color(0xff050b18);
+  Color backgroundColor = Color(0xff050b18);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('NavigatorBottomBar'),
       ),

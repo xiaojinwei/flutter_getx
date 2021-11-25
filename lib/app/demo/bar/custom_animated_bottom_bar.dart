@@ -191,6 +191,7 @@ class RippleLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isRippleEffect ? Material(
+      color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
         onDoubleTap: onDoubleTap,
