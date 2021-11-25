@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_getx/app/demo/main/demo_main.dart';
 import 'package:flutter_getx/app/modules/main/controllers/main_controller.dart';
 import 'package:flutter_getx/app/modules/setting/setting_page.dart';
 import 'package:flutter_getx/app/routes/app_pages.dart';
@@ -87,6 +88,14 @@ class MainDrawer extends StatelessWidget{
               Get.back();
               //Mop.instance.openApplet('5e3c147a188211000141e9b1');
               //Mop.instance.openApplet('5e4d123647edd60001055df1',sequence: 1);
+            },
+          ),
+          ListTile(
+            title: Text('Demo'),
+            leading: Icon(Icons.power,color: color),
+            onTap: (){
+              Get.back();
+              Get.to(DemoMain());
             },
           ),
           _logOutInView(context,color),

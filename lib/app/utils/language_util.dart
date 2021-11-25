@@ -30,6 +30,10 @@ class LanguageUtil {
     return AppUtil.instance.getAppState().locale;
   }
 
+  static Locale? getSettingLanguageLocale(){
+    return getSelectedLocale()??Get.deviceLocale;
+  }
+
   static bool isSelectedLanguage(Locale? locale){
     return AppUtil.instance.getAppState().locale == locale;
   }

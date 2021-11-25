@@ -18,7 +18,7 @@ void main() async{
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       translations: LocaleTranslations(), // your translations
-      locale: LanguageUtil.getSelectedLocale(), // translations will be displayed in that locale
+      locale: LanguageUtil.getSettingLanguageLocale(), // translations will be displayed in that locale
       fallbackLocale: Locale('zh', 'CN'),
       themeMode: ThemeUtil.getSelectedThemeMode(),
       theme: ThemeUtil.getThemeData(isDarkMode: false),
